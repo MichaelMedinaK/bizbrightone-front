@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --secondary-color: #e0e0e0;
+  --secondary-bg: #333;
+  --text-color-dark: rgba(0, 0, 0, 0.87);
+  --text-color-light: #000000; 
+  --border-radius: 8px;
+  --font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --line-height: 1.5;
+  --bg-dark: #ad772bca;
+  --bg-light: #121212;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  color: var(--text-color-dark); 
+  background-color: var(--bg-dark); 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  color: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color-dark: var(--text-color-light);
+    --bg-dark: var(--bg-light);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}

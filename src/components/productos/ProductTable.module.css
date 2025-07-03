@@ -1,0 +1,19 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(162, 19, 19, 0.1); 
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f4b71c;
+  }
+  
+  .table th {
+    background-color: #000000; 
+    font-weight: 600;
+    color: wheat;
+  }

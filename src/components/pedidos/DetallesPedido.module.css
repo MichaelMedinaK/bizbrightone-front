@@ -1,0 +1,20 @@
+.popup {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  position: relative;
+  color: var(--text-color-dark);
+  border: 1px solid #333;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: var(--text-color-light);
+}

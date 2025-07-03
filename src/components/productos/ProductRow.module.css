@@ -1,0 +1,10 @@
+.row:nth-child(even) { 
+    background-color: #00000057;
+  }
+  
+  .row:hover {
+      background-color: #fdfdfd;
+      cursor: pointer;
+  }
+
+  
