@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+BizBrightOne Front
+Proyecto frontend hecho con React, Vite y Firebase Auth.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Requisitos
+Node.js >= 18.x
 
-Currently, two official plugins are available:
+npm o yarn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instalación
+Clona el repositorio:
 
-## Expanding the ESLint configuration
+bash
+Copiar
+Editar
+git clone https://github.com/MichaelMedinaK/bizbrightone-front.git
+cd bizbrightone-front
+Instala dependencias:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copiar
+Editar
+npm install
+o
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copiar
+Editar
+yarn install
+Configura Firebase:
+Crea un archivo .env en la raíz con tus variables de Firebase (puedes pedirle al admin un ejemplo o usar tus propias credenciales).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+env
+Copiar
+Editar
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_APP_ID=...
+Inicia el proyecto:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+bash
+Copiar
+Editar
+npm run dev
+o
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+bash
+Copiar
+Editar
+yarn dev
+Notas
+El login está integrado con Firebase Auth.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Si tienes problemas con las variables de entorno, revisa la documentación de Firebase.
+
